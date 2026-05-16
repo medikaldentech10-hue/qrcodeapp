@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     if (!pnr) {
       return res.status(400).json({ durum: "hata", mesaj: "PNR kodu eksik." });
     }
-  
+  // Vercel önbellek temizleme için zorunlu güncelleme
     // 🔴 GOOGLE APPS SCRIPT'TEN ALDIĞIN UZUN WEB UYGULAMASI LİNKİNİ BURAYA YAPIŞTIR
     const GOOGLE_API_URL = "https://script.google.com/macros/s/AKfycbyKm3mPfpfsqd8G2SDwfxllY6x6oF9IOIEYTgU7HlXsdK0kxqDeUOKyHlQG7-aDJOLX/exec";
 
